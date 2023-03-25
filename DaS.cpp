@@ -1,5 +1,6 @@
 //though I have created here struct but I am not using it now
-//this code is taking data from "score.csv" file and without storing it in any container it directly output streaming into console
+//this code is taking data from "score.csv" file and without storing it in any container it directly output streaming to console
+
 
 #include<iostream>
 #include<fstream>
