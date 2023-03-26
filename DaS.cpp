@@ -39,6 +39,7 @@ int main(){
             con_word.push_back(word);
         }
         record student;
+        //here we are populating structure datatype--student
         student.studentID = con_word[0];
         student.name = con_word[1];
         student.gender = con_word[2];
@@ -49,7 +50,7 @@ int main(){
         student.phy = stof(con_word[7]);
         student.chem = stof(con_word[8]);
         student.total = stof(con_word[9]);
-        
+        //this create a vector of records taking each word from each line 
         student_record.push_back(student);
 
     }
