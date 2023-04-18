@@ -19,9 +19,9 @@ struct record{
 };
 
 int main(){
-    vector<record>student_record;
-    ifstream student_score_file("score.CSV");
-    if(!student_score_file.is_open()){
+    vector<record>student_record;                               //a vector of struct type that will keep the value from score.CSV file
+    ifstream student_score_file("score.CSV");                   //where each student is represented by a single structure data type
+    if(!student_score_file.is_open()){                          //here we name it as---- record
         cerr<<"Error!! Openning file!!"<<endl;
         return 1;
     }
@@ -39,7 +39,7 @@ int main(){
             con_word.push_back(word);
         }
         record student;
-        //here we are populating structure datatype--student
+        //here we are populating structure datatype--student......
         student.studentID = con_word[0];
         student.name = con_word[1];
         student.gender = con_word[2];
@@ -50,10 +50,11 @@ int main(){
         student.phy = stof(con_word[7]);
         student.chem = stof(con_word[8]);
         student.total = stof(con_word[9]);
-        //this create a vector of records taking each word from each line 
+        //this create a vector of records taking each word from each line..... 
         student_record.push_back(student);
 
     }
+    //here we accessing data from the vector... 
     cout<<student_record[29].math;
     student_score_file.close();
 
